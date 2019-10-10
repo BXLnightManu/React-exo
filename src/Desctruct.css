@@ -1,0 +1,11 @@
+.hidden {
+    visibility: hidden;
+}
+
+.not-hidden {
+    color: red;
+}
+
+.title {
+    color: red;
+}
