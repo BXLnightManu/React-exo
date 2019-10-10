@@ -6,7 +6,7 @@ function Root() {
   return (
     <div>
       <header>
-        <Desctruct ob="bonjour"/>
+        <Desctruct ob={{hello: true}}/>
       </header>
     </div>
   );

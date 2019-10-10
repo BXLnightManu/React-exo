@@ -1,20 +1,21 @@
 import React from 'react';
 import './Desctruct.css';
 
-function isObject() {
-    return <div>{JSON.stringify(this.props.ob)}</div>
+function IsObject(props) {
+    return <div>{JSON.stringify(props.ob)}</div>
 }
 
-function isNotObject() {
+function IsNotObject(props) {
     return <h1 className = "title">ERROR! NOT AN OBJECT</h1>
 }
 
 function Desctruct(props) {
-    const type = typeof this.props.ob;
+    // {name: alice, fn: 'Woodard'}
+    const type = typeof props.ob;
     if(type==="object") {
-        return <isObject />
+        return <IsObject {...props}/>
     } else {
-        return <isNotObject />
+        return <IsNotObject {...props}/>
     }
 }
 
